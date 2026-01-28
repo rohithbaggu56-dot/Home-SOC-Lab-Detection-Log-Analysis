@@ -60,8 +60,10 @@ This lab focuses on SOC Analyst (L1) fundamentals and does not include advanced 
 <img width="1897" height="689" alt="Windows-Event-Viewer" src="https://github.com/user-attachments/assets/dc5c4cb2-2582-453b-aece-2482591ab5b2" />
 
 
-**3. Linux Log Analysis – OpenSSH logs**
+**3. Linux authentication log analysis (OpenSSH)**
 <img width="1910" height="922" alt="Ubuntu-SSH-log analysis" src="https://github.com/user-attachments/assets/decf839d-d7b9-46de-9258-ac9d1bc41660" />
+OpenSSH log file analyzed for practice and investigation purposes.
+
 
 
 **4. Splunk – DNS Log Analysis**
