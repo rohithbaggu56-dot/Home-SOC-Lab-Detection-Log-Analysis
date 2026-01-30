@@ -82,4 +82,7 @@ OpenSSH log file analyzed for practice and investigation purposes.
 ## Future Improvements
 - Implement Sysmon for advanced Windows telemetry  
 - Forward Linux logs to Splunk  
-- Create basic detection scenarios  
+- Create basic detection scenarios
+
+🔗 **Navigation**  
+⬅️ [Back to Portfolio](https://github.com/rohithbaggu56-dot)
