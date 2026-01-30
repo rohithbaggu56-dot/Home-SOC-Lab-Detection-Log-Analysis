@@ -79,10 +79,5 @@ OpenSSH log file analyzed for practice and investigation purposes.
 - Improved confidence in reading Windows and Linux logs  
 - Learned how SIEM tools support SOC investigations  
 
-## Future Improvements
-- Implement Sysmon for advanced Windows telemetry  
-- Forward Linux logs to Splunk  
-- Create basic detection scenarios
-
-🔗 **Navigation**  
+## 🔗 **Navigation**  
 ⬅️ [Back to Portfolio](https://github.com/rohithbaggu56-dot)
