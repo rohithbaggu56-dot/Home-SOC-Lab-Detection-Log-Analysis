@@ -79,5 +79,7 @@ OpenSSH log file analyzed for practice and investigation purposes.
 - Improved confidence in reading Windows and Linux logs  
 - Learned how SIEM tools support SOC investigations  
 
-## 🔗 **Navigation**  
+---
+🔗 **Navigation**  
 ⬅️ [Back to Portfolio](https://github.com/rohithbaggu56-dot)
+---
