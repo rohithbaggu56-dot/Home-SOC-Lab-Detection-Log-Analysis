@@ -1,4 +1,4 @@
-## 🛡️ Home SOC Lab | Detection, Log Analysis & Network Traffic
+## 🛡️ Home SOC Lab | SIEM, Firewall Monitoring & AI-Assisted Detection
 
 ![Splunk](https://img.shields.io/badge/Splunk-SIEM-000000?style=for-the-badge&logo=splunk&logoColor=white)
 ![Wireshark](https://img.shields.io/badge/Wireshark-Network_Analysis-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)
@@ -7,15 +7,27 @@
 
 
 ## Summary
-This project documents my Home SOC Lab built to practice SOC Analyst (L1) skills such as log analysis, alert investigation, phishing analysis, and basic network traffic analysis using real tools and workflows.
+This project documents my Home SOC Lab built to practice SOC Analyst (L1) skills such as log analysis, alert investigation, phishing analysis, and basic network traffic analysis using real tools and workflows.The lab was later expanded with pfSense firewall monitoring, Wazuh SIEM integration, and AI-assisted alert triage using AIRIA to simulate a real SOC environment.
 
 ## 🎯Objective
 To gain hands-on experience with SOC fundamentals by simulating a small lab environment and practicing detection, investigation, and log analysis from a defender’s perspective.
+- Understand network visibility using firewall telemetry
+- Practice endpoint monitoring using Wazuh agents
+- Explore AI-assisted log triage and investigation workflows
 
 ## 🔭Project Scope
-This lab focuses on SOC Analyst (L1) fundamentals and does not include advanced detection engineering or automation.
+This lab focuses on SOC Analyst (L1) fundamentals and does not include advanced detection engineering or automation.Additional scope included firewall monitoring, centralized log collection, and AI-assisted investigation workflows to replicate real SOC analyst operations.
+## 🔎 SOC Workflow Simulation
+1. Attack traffic generated from Kali Linux
+2. Network activity inspected through pfSense firewall
+3. Endpoint logs collected using Wazuh agents
+4. Logs forwarded to Splunk for analysis
+5. Dashboards used to identify anomalies
+6. AIRIA AI assisted alert triage and investigation
+7. Indicators of Compromise (IOCs) documented
 
 ## 🧪Lab Architecture
+<img width="2816" height="1536" alt="Gemini_Generated_Image_9zlyo09zlyo09zly" src="https://github.com/user-attachments/assets/16442680-488c-46d7-84b9-a7e51915e88e" />
 
 **Endpoints**
 - Windows 10 VM – Primary endpoint for log analysis
@@ -27,7 +39,21 @@ This lab focuses on SOC Analyst (L1) fundamentals and does not include advanced 
 - Windows Event Viewer – Native Windows log analysis
 - Wireshark – Network traffic capture and analysis
 - Sysmon – for advanced Windows telemetry
- 
+ ### 🔐 Security & Monitoring Expansion
+ - **pfSense Firewall**
+  - Network segmentation and traffic control
+  - Monitored internal lab communication
+  - Simulated enterprise firewall visibility
+
+- **Wazuh SIEM**
+  - Endpoint agents deployed on Windows and Linux
+  - Collected authentication and system activity logs
+  - Supported detection and alert monitoring
+
+- **AIRIA AI Agent**
+  - Assisted log triage during investigations
+  - Helped identify suspicious behavior patterns
+  - Used as AI-supported SOC analyst workflow
 
 ## ⚒️What I Did in This Lab
 
