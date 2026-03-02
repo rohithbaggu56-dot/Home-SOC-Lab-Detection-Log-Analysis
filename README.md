@@ -230,3 +230,9 @@ OpenSSH log file analyzed for practice and investigation purposes.
 Security monitoring is not about tools alone, it is about understanding behavior, patterns, and investigation logic.
 
 This lab represents practical steps toward becoming a SOC Analyst by learning **how defenders observe and respond to threats**.
+
+---
+🔗 **Navigation**  
+⬅️ [Back to Portfolio](https://github.com/rohithbaggu56-dot)
+---
+
