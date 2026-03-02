@@ -1,5 +1,4 @@
-## 🛡️ Home SOC Lab | SIEM, Firewall Monitoring & AI-Assisted Detection
-## 🛠️ Technologies Used
+# 🏠 Home SOC Lab – Detection, Log Analysis & Network Investigation
 ![Splunk](https://img.shields.io/badge/Splunk-SIEM-000000?style=for-the-badge&logo=splunk&logoColor=white)
 ![Wazuh](https://img.shields.io/badge/Wazuh-EDR%20%2F%20HIDS-005571?style=for-the-badge&logo=wazuh&logoColor=white)
 ![pfSense](https://img.shields.io/badge/pfSense-Firewall-212121?style=for-the-badge&logo=pfsense&logoColor=white)
@@ -8,105 +7,173 @@
 ![Linux](https://img.shields.io/badge/Linux_Log_Analysis-333333?style=for-the-badge&logo=linux&logoColor=white)
 ![AI Log Analysis](https://img.shields.io/badge/AI-Agent%20Log%20Triage-6A5ACD?style=for-the-badge&logo=openai&logoColor=white)
 
+A multi-VM Security Operations Center (SOC) home lab built to simulate real-world blue team workflows including log monitoring, alert investigation, network analysis, and threat detection.
 
-## Summary
-This project documents my Home SOC Lab built to practice SOC Analyst (L1) skills such as log analysis, alert investigation, phishing analysis, and basic network traffic analysis using real tools and workflows.The lab was later expanded with pfSense firewall monitoring, Wazuh SIEM integration, and AI-assisted alert triage using AIRIA to simulate a real SOC environment.
-This lab simulates a small enterprise SOC environment where logs, network traffic, firewall telemetry, and AI-assisted analysis are combined to perform real-world security investigations.
+This lab focuses on understanding **how attacks appear in logs**, how analysts investigate alerts, and how security tools work together inside a monitored environment.
 
-## 🎯Objective
-To simulate SOC analyst (L1) responsibilities including log investigation, alert triage, network monitoring, and incident analysis within an isolated lab environment.
-- Understand network visibility using firewall telemetry
-- Practice endpoint monitoring using Wazuh agents
-- Explore AI-assisted log triage and investigation workflows
+---
 
-## 🔭Project Scope
-This lab focuses on SOC Analyst (L1) fundamentals and does not include advanced detection engineering or automation.Additional scope included firewall monitoring, centralized log collection, and AI-assisted investigation workflows to replicate real SOC analyst operations.
+## 🎯 Project Summary
 
-## 🔎 SOC Workflow Simulation
-1. Simulated attacker activity generated from Kali Linux
-2. Network traffic inspected and logged by pfSense firewall
-3. Endpoint telemetry collected via Wazuh agents
-4. Logs centralized and analyzed in Splunk SIEM
-5. Dashboards used to identify anomalies
-6. AIRIA AI assisted alert triage and investigation
-7. Indicators of Compromise (IOCs) documented
+This project demonstrates a self-built SOC environment created using virtual machines and open-source security tools.  
+The lab simulates enterprise-style monitoring where system logs, network traffic, and security events are analyzed to identify suspicious activity.
 
-## 🧪Lab Architecture
+The goal was not penetration testing, but **defensive security and SOC analyst skill development**.
+
+
+## 🎯 Project Scope
+
+This lab focuses on:
+
+✅ Detection & monitoring  
+✅ Log investigation  
+✅ Network analysis  
+✅ SOC workflow understanding  
+
+This project does **not** simulate production infrastructure but serves as a controlled learning environment.
+
+
+## 🎯 Objectives
+
+- Build an isolated cybersecurity lab using virtualization
+- Practice Windows and Linux log investigation
+- Perform SOC-style alert triage and analysis
+- Understand attacker behavior through logs and traffic
+- Gain hands-on experience with SIEM and monitoring tools
+- Develop investigation and detection thinking
+
+---
+
+## 🏗️ Lab Architecture
 <img width="2816" height="1536" alt="Gemini_Generated_Image_9zlyo09zlyo09zly" src="https://github.com/user-attachments/assets/16442680-488c-46d7-84b9-a7e51915e88e" />
 
-## 🔧 Integration Status
+The environment consists of multiple virtual machines connected within an isolated network.
 
-This home lab is being developed incrementally to simulate a real SOC environment.
+### Virtual Machines
 
-Current setup includes multiple independent security components:
+- **Ubuntu Server**
+  - Log analysis
+  - Security monitoring
+  - SSH authentication investigation
 
-- pfSense firewall for network monitoring and traffic visibility
-- Wazuh for endpoint detection and host-based monitoring
-- Splunk SIEM for log analysis and dashboard creation
-- AIRIA AI agent for AI-assisted log investigation and alert triage
+- **Windows 10**
+  - Event Viewer analysis
+  - Security log monitoring
+  - User activity investigation
 
-At the current stage, these tools operate independently for learning purposes.
-
-
-### Network Design Principles
-- Segmented internal lab network behind firewall
-- Centralized logging architecture
-- Endpoint + network visibility combined
-- Simulated enterprise monitoring workflow
-
-**Endpoints**
-- Windows 10 VM – Primary endpoint for log analysis
-- Ubuntu Linux VM – Linux log and process monitoring
-- Kali Linux VM – Traffic generation and analysis support
-
-**Monitoring & Analysis**
-- Splunk – Centralized log ingestion and searching
-- Windows Event Viewer – Native Windows log analysis
-- Wireshark – Network traffic capture and analysis
-- Sysmon – for advanced Windows telemetry
-
- ### 🔐 Security & Monitoring Expansion
- - **pfSense Firewall**
-  - Network segmentation and traffic control
-  - Monitored internal lab communication
-  - Simulated enterprise firewall visibility
-
-- **Wazuh SIEM**
-  - Endpoint agents deployed on Windows and Linux
-  - Collected authentication and system activity logs
-  - Supported detection and alert monitoring
-
-- **AIRIA AI Agent**
-  - Assisted log triage during investigations
-  - Helped identify suspicious behavior patterns
-  - Used as AI-supported SOC analyst workflow
-
-## ⚒️What I Did in This Lab
-
-- Designed and deployed a multi-VM SOC lab environment
-- Investigated Windows security and authentication events
-- Performed log correlation and analysis using Splunk
-- Analyzed Linux authentication logs for suspicious access attempts
-- Captured and inspected network traffic using Wireshark
-- Documented investigation findings and indicators of compromise
-
-## DNS Log Analysis (Splunk)
-- Ingested DNS logs in JSON format into Splunk
-- Analyzed queried domains and DNS record types
-- Identified frequently accessed domains and internal queries
-- Practiced SOC-style investigation using search and aggregation
+- **Kali Linux**
+  - Traffic generation
+  - Network testing scenarios
+  - Security analysis tools
 
 
-## Skills Practiced
+## 🛠️ Technologies & Tools Used
+
+### SIEM & Monitoring
+- Splunk (Log ingestion & dashboards)
+- Wazuh (Host-based monitoring – explored separately)
+
+### Network & Traffic Analysis
+- Wireshark
+- TCPDump
+- DNS traffic inspection
+
+### Operating Systems
+- Windows 10
+- Ubuntu Linux
+- Kali Linux
+
+### Network Security
+- pfSense Firewall (network segmentation – dedicated lab)
+
+### AI Security Experimentation
+- AIRIA AI Agent (log triage experimentation – separate project)
+
+
+## 🔎 Skills Practiced
+
 - Log Analysis & Alert Investigation
-- SIEM Monitoring (Splunk & Wazuh)
+- SIEM Monitoring Concepts
 - Network Traffic Analysis
-- Windows & Linux Security Fundamentals
-- Incident Investigation Workflow 
+- Windows Event Log Investigation
+- Linux Authentication Log Analysis
+- Incident Investigation Workflow
+- IOC Identification
+- Security Event Correlation
 
-## 💻Lab Screenshots
+
+## 🧠 Investigation Workflow Practiced
+
+Typical analysis approach followed in the lab:
+
+1. Generate activity inside lab environment
+2. Collect logs from systems
+3. Search and filter events
+4. Identify suspicious patterns
+5. Extract Indicators of Compromise (IOCs)
+6. Validate findings using multiple data sources
+7. Document investigation results
+
+This workflow mirrors entry-level SOC analyst processes.
+
+
+## 📊 Log Analysis Performed
+
+### Windows Investigation
+- Security Event Log review
+- Login activity monitoring
+- Failed authentication tracking
+- Event correlation using Event IDs
+
+### Linux Investigation
+- SSH authentication logs analysis
+- Failed login detection
+- Brute-force behavior identification
+- Suspicious IP investigation
+
+Example log sources:
+- /var/log/auth.log
+- OpenSSH authentication logs
+- windows Security Logs
+  
+
+## 🌐 Network Traffic Analysis
+
+Network activity was analyzed to understand communication patterns and detect anomalies.
+
+Activities included:
+
+- DNS request/response inspection
+- Packet capture analysis
+- Traffic filtering using Wireshark
+- Identifying unusual connections
+- Understanding attacker footprints in traffic
+
+
+## 🧩 Extended Lab Components
+
+As the lab evolved, additional security technologies were explored in dedicated repositories:
+
+- 🔥 **pfSense Firewall Lab**  
+  Network segmentation, firewall rules, and traffic control  
+  👉 (Add repo link)
+
+- 🛡 **Wazuh SIEM Monitoring Lab**  
+  Host-based monitoring and alert visibility  
+  👉 (Add repo link)
+
+- 🤖 **AI SOC Log Triage (AIRIA AI)**  
+  Experimenting with AI-assisted investigation workflows  
+  👉 (Add repo link)
+
+These components expand the SOC environment but are documented separately for clarity.
+
+---
+
+## 📸 Investigation & Lab Evidence
+
 **1. Virtualized Home SOC Lab Environment (local VMs, NAT networking)**
-<img width="1920" height="1080" alt="Home-lab setup" src="https://github.com/user-attachments/assets/fa8ae1ea-7d7d-4bde-9f35-297603b8b60d" />
+<img width="1920" height="1080" alt="Screenshot 2026-03-02 111835" src="https://github.com/user-attachments/assets/0c801d9a-ac58-430b-a56f-3a5adf110e37" />
 
 
 **2. Windows Event Viewer – Security Event Logs (Windows 10 VM)**
@@ -126,21 +193,29 @@ OpenSSH log file analyzed for practice and investigation purposes.
 **5. Wireshark – DNS Response Analysis**
 <img width="1903" height="975" alt="Wireshark-Dsn analysis" src="https://github.com/user-attachments/assets/e5ff993d-f406-45d2-92b5-ca0830d61c57" />
 
+---
+## 📈 Key Learning Outcomes
 
+- Understood how attacker behavior appears in logs
+- Learned differences between normal vs suspicious activity
+- Practiced SOC investigation methodology
+- Built dashboards for log visibility
+- Improved detection-focused mindset
+- Gained practical blue team experience
 
-## 📝Key Takeaways
-- Understood how attacker activity appears in logs  
-- Improved confidence in reading Windows and Linux logs  
-- Learned how SIEM tools support SOC investigations
-- Developed understanding of how enterprise SOC tools integrate together
 
 ## 🚀 Future Improvements
-- Integrate Wazuh alerts into Splunk SIEM
-- Automate alert enrichment workflows
-- Expand firewall logging and threat detection rules
-- Build incident response playbooks
+
+- Integrate Wazuh alerts into Splunk
+- Automate alert correlation
+- Expand detection use cases
+- Centralized log pipeline
+- AI-assisted investigation workflows
 
 ---
-🔗 **Navigation**  
-⬅️ [Back to Portfolio](https://github.com/rohithbaggu56-dot)
----
+
+## 📌 Key Takeaway
+
+Security monitoring is not about tools alone, it is about understanding behavior, patterns, and investigation logic.
+
+This lab represents practical steps toward becoming a SOC Analyst by learning **how defenders observe and respond to threats**.
